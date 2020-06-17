@@ -10,6 +10,6 @@ class General < Formula
             "--configuration", "release",
             "--enable-pubgrub-resolver",
             "--disable-sandbox"
-        bin.install '.build/release/prism'
+        bin.install '.build/release/general'
     end
 end
