@@ -8,7 +8,6 @@ class General < Formula
     def install
         system "swift", "build",
             "--configuration", "release",
-            "--enable-pubgrub-resolver",
             "--disable-sandbox"
         bin.install '.build/release/general'
     end
