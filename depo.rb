@@ -1,9 +1,9 @@
 class Depo < Formula
     desc "Tool for convenient multiple package managers usage in your iOS project"
     homepage "https://github.com/rosberry/depo"
-    url "https://github.com/rosberry/depo/archive/1.0.0.tar.gz"
-    version "1.0.0"
-    sha256 "cf522eb641d875bf5c25f4b11fec7046231d28c53213091d4732e779fe6d84e9"
+    url "https://github.com/rosberry/depo/archive/1.0.1.tar.gz"
+    version "1.0.1"
+    sha256 "cca03efdf5e0bbd15c32e20b2ae3ed3d0a8cef30400b055c44bb2ec86fce2e28"
   
     def install
       system "make", "build"
