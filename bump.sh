@@ -10,4 +10,4 @@ SHA256=$(shasum --algorithm 256 $(brew --cache --build-from-source $FORMULA) | a
 
 sed -E -i '' 's/^    sha256 ".+"/    sha256 "'$SHA256\"/ $FORMULA
 sed -E -i '' 's/^    version ".+"/    version "'$VERSION\"/ $FORMULA
-sed -E -i '' 's/^    url ".+"/    url "https:\/\/github.com\/rosberry\/${PROJ}\/archive\/'$VERSION'.tar.gz'\"/ $FORMULA
+sed -E -i '' 's/^    url ".+"/    url "https:\/\/github.com\/rosberry\/'$PROJ'\/archive\/'$VERSION'.tar.gz'\"/ $FORMULA
