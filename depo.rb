@@ -3,7 +3,7 @@ class Depo < Formula
     homepage "https://github.com/rosberry/depo"
     url "https://github.com/rosberry/depo/archive/1.0.1.tar.gz"
     version "1.0.1"
-    sha256 "cca03efdf5e0bbd15c32e20b2ae3ed3d0a8cef30400b055c44bb2ec86fce2e28"
+    sha256 "ea5512746444fb050e100fc78a639190bad10786d545f7071ca73c514dc18655"
   
     def install
       system "make", "build"
