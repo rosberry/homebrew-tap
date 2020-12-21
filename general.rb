@@ -1,14 +1,15 @@
 class General < Formula
     desc "Code generation for your modules"
     homepage "https://github.com/rosberry/general"
-    url "https://github.com/rosberry/general/archive/0.1.2.tar.gz"
-    version "0.1.2"
-    sha256 "3ce1edc79ca95e374163723e9ae9531b3069b2a6cf39a181f4b78740886ad9ce"
+    url "https://github.com/rosberry/general/tarball/brew"
+    version "0.2"
+    sha256 "09bb0f8c6c1aa09df6842fac44fa20b22c0f1676148512a255ccee48775924b9"
 
     def install
-        system "swift", "build",
-            "--configuration", "release",
-            "--disable-sandbox"
-        bin.install '.build/release/general'
+      system "make", "general"
+      bin.install 'general'
+      bash_completion.install "Scripts/completions/general" => "general"
+      zsh_completion.install  "Scripts/completions/_general" => "_general"
+      fish_completion.install "Scripts/completions/general.fish" => "general.fish"
     end
 end
