@@ -3,7 +3,7 @@ class General < Formula
     homepage "https://github.com/rosberry/general"
     url "https://github.com/rosberry/general/archive/0.3.tar.gz"
     version "0.3"
-    sha256 "b4af2747b54111f141b8a9afa50ab7a2b7cc47943c554235f240dcabef7c3cdb"
+    sha256 "0ccc0449f641d7acb83d2f83719fdc993933c0b096abf0893d55539c32a13741"
 
     def install
       system "swift", "build",
