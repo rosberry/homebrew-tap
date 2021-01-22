@@ -6,9 +6,13 @@ class General < Formula
     sha256 "b4af2747b54111f141b8a9afa50ab7a2b7cc47943c554235f240dcabef7c3cdb"
 
     def install
-        system "swift", "build",
-            "--configuration", "release",
-            "--disable-sandbox"
-        bin.install '.build/release/general'
+      system "swift", "build",
+             "--configuration", "release",
+             "--disable-sandbox"
+      bin.install '.build/release/general'
+
+      bash_completion.install "Scripts/completions/general" => "general"
+      zsh_completion.install  "Scripts/completions/_general" => "_general"
+      fish_completion.install "Scripts/completions/general.fish" => "general.fish"
     end
 end
